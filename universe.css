@@ -1,0 +1,164 @@
+/* main page elements */
+
+body {
+	margin:0; 
+	padding:.5em 0;
+	font-family:Georgia, "Arial Narrow", sans-serif;
+	font-size:100%;
+}
+h1, h2 {
+	font-family:"Arial Narrow",sans-serif;
+	font-weight:normal;
+}
+h1 {
+	font-size:2em;
+	margin:0 50% 0 5%;
+	border-bottom:2px solid black;
+	text-align:right;
+}
+h1 span {
+	position:relative;
+	top:.26em;
+	left:0;
+	background:white;
+	padding-left:.1em;
+}
+p {
+	margin:0 0 0 5%;
+	padding:1em 0 2em 1.2em;
+	border-left:1px solid black;
+}
+p#more {
+	margin:2em 5% 2em 5%;
+	padding:0;
+	border-left:none;
+}
+p#footer {
+	width:30em;
+	float:right;
+	margin:0 5% 1em 5%;
+	padding:1.5em 1em 1em 0;
+	font-size:0.8em;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	border-left:none;
+	text-align:left;
+}
+#universe {
+	background:black url(sky.png) 0 0 repeat;
+	color:white;
+	height:100px;
+	padding-top:100px;
+	margin:0 5%;
+}
+
+/* positioning elements */
+
+#cartesian {
+	margin:0 0 0 50%;
+	height:100px;
+	position:relative;
+	width:40%;
+}
+#sun {
+	position:absolute;
+	top:-100px; left:-100px;
+	height:200px; width:200px;
+	z-index:100;
+}
+#sun img {
+}
+#orbit {
+	position:absolute;
+	top:0;
+	left:-100%;
+}
+#planet {
+	position:absolute;
+	left:-30px; top:-30px;
+	width:60px;
+	height:60px;
+}
+
+/* planet pieces */
+
+#left, #right, #leftDark, #rightDark {
+	position:absolute;
+	top:0; bottom:0;
+}
+#left, #leftDark {
+	left:0; right:50%;
+}
+#right, #rightDark {
+	left:50%; right:0;
+}
+#planet img {
+	width:100%;
+	height:100%;
+}
+
+/* default phase */
+
+#sun {
+	z-index:0;
+}
+#orbit {
+	left:100px;
+	top:30px;
+}
+#right {
+	visibility:hidden;
+}
+#leftDark {
+	z-index:5;
+	left:20%;
+}
+
+/* sayings */
+
+#sayings {
+	display:block;
+	padding:0;
+	margin:0;
+	color:white;
+	position:absolute;
+	left:-5em; right:-5em;
+	text-align:center;
+	bottom:110%;
+	z-index:50;
+}
+#sayings LI {
+	display:none;
+	background:black;
+	margin:0;
+}
+
+/* details */
+
+#details {
+	margin:0 5% 2em 5%;
+	border-right:2px black solid;
+	border-bottom:2px black solid;
+	padding:1em 1.5em 1em 0;
+}
+#details p {
+	margin:0 0 1em 0;
+	padding:0;
+	border:none;
+}
+#details UL, #details LI {
+	list-style:none;
+	padding:0; margin:0;
+}
+#detailsHeading {
+	margin:1.2em 50% 0 5%;
+	padding:0;
+	height:.75em;
+	border-top:2px solid black;
+	border-left:2px solid black;
+	border-bottom:none;
+}
+#detailsHeading span {
+	position:relative;
+	top:-1em;
+}
